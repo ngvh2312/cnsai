@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://padungg.github.io/phung-anh-dung-portfolio/ -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nguyễn Viết Hưng | Academic Portfolio — UET, ĐHQGHN</title>
+  <meta name="description" content="Digital Portfolio học thuật môn Nhập môn Công nghệ — Nguyễn Viết Hưng, sinh viên CNTT, Đại học Công nghệ (UET), Đại học Quốc gia Hà Nội.">
+  <meta name="author" content="Nguyễn Viết Hưng">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="">
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" data-tab="home">
+        Nguyễn Viết Hưng
+        <span class="navbar-brand-badge">Portfolio</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a class="nav-link" data-tab="home">Giới thiệu</a></li>
+        <li><a class="nav-link active" data-tab="projects">Dự án</a></li>
+        <li><a class="nav-link" data-tab="summary">Tổng kết</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======================== SECTION 1: GIỚI THIỆU ======================== -->
+  <section class="page-section" id="home">
+    <div class="container">
+
+      <!-- HERO: 2 cột -->
+      <div class="hero-container">
+        <div class="hero-text-side">
+          <span class="academic-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="13" height="13"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 12 3 12 0v-5"></path></svg>
+            UET — Đại học Công nghệ, ĐHQGHN
+          </span>
+
+          <h1 class="hero-greeting">
+            Xin chào, mình là<br>
+            <span class="gradient-text">Nguyễn Viết Hưng</span>
+          </h1>
+
+          <p class="hero-intro-text">
+            Mình hiện đang là sinh viên năm nhất chuyên ngành <strong>Công nghệ thông tin</strong> tại Trường Đại học Công nghệ (UET - ĐHQGHN). Bước chân vào môi trường đại học, mình luôn giữ tinh thần học hỏi và tò mò về thế giới công nghệ. Sở thích thời gian rảnh của mình là tìm hiểu về các công cụ số mới, đọc tin tức công nghệ và rèn luyện tư duy logic qua các bài toán lập trình cơ bản.
+          </p>
+
+          <div class="hero-cta-buttons">
+            <button class="btn btn-primary nav-link-btn" data-tab="projects">
+              Xem dự án học tập
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            <button class="btn btn-secondary nav-link-btn" data-tab="summary">
+              Xem tổng kết
+            </button>
+          </div>
+        </div>
+
+        <!-- Terminal Mockup -->
+        <div class="hero-visual-side">
+          <div class="terminal-container">
+            <div class="terminal-header">
+              <span class="terminal-dot close"></span>
+              <span class="terminal-dot minimize"></span>
+              <span class="terminal-dot expand"></span>
+              <span class="terminal-tab-title">main.go — ~/portfolio</span>
+            </div>
+            <div class="terminal-content">
+              <pre><code><span class="code-comment">// Khởi tạo sinh viên</span>
+<span class="code-keyword">package</span> main
+
+<span class="code-keyword">import</span> <span class="code-string">"fmt"</span>
+
+<span class="code-keyword">type</span> <span class="code-type">Student</span> <span class="code-keyword">struct</span> {
+    Name   <span class="code-type">string</span>
+    ID     <span class="code-type">string</span>
+    Major  <span class="code-type">string</span>
+    School <span class="code-type">string</span>
+}
+
+<span class="code-keyword">func</span> <span class="code-func">main</span>() {
+    me := <span class="code-type">Student</span>{
+        Name:   <span class="code-string">"Nguyen Viet Hung"</span>,
+        ID:     <span class="code-string">"25020196"</span>,
+        Major:  <span class="code-string">"Information Technology"</span>,
+        School: <span class="code-string">"VNU-UET"</span>,
+    }
+    fmt.<span class="code-func">Println</span>(<span class="code-string">"Hello World! I'm"</span>, me.Name)
+    fmt.<span class="code-func">Println</span>(<span class="code-string">"Ready to learn and build."</span>)
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <!-- Hồ sơ chi tiết -->
+      <div class="profile-grid">
+        <!-- Thẻ sinh viên -->
+        <div class="profile-card reveal revealed">
+          <div class="profile-avatar" style="overflow: hidden; padding: 0;">
+            <img src="./cnsai/ảnh.jpg" alt="Nguyễn Viết Hưng" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+          </div>
+          <h3 class="profile-name">Nguyễn Viết Hưng</h3>
+          <p class="profile-title">Sinh viên năm nhất</p>
+          <div class="profile-meta-list">
+            <div class="profile-meta-item">
+              <span class="profile-meta-label">Trường</span>
+              <span class="profile-meta-value">UET — ĐHQGHN</span>
+            </div>
+            <div class="profile-meta-item">
+              <span class="profile-meta-label">Ngành</span>
+              <span class="profile-meta-value">Công nghệ thông tin</span>
+            </div>
+            <div class="profile-meta-item">
+              <span class="profile-meta-label">Mã sinh viên</span>
+              <span class="profile-meta-value">25020196</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thông tin mục tiêu -->
+        <div class="profile-info">
+          <div class="info-card reveal reveal-d1 revealed">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              Mục tiêu học tập &amp; Định hướng
+            </h3>
+            <p style="margin-bottom: 12px;">
+              <strong>Mục tiêu học tập:</strong> Trọng tâm hiện tại của mình là nắm vững các kiến thức nền tảng về khoa học máy tính, rèn luyện tư duy thuật toán và trau dồi khả năng tự học. Đồng thời, mình cũng chú trọng phát triển các kỹ năng mềm như làm việc nhóm và giao tiếp trong môi trường số.
+            </p>
+            <p>
+              <strong>Định hướng phát triển:</strong> Trong tương lai, mình hướng tới việc trở thành một kỹ sư phần mềm có chuyên môn vững vàng, có khả năng thích ứng nhanh với sự biến đổi liên tục của ngành công nghệ và biết cách ứng dụng công nghệ để giải quyết các vấn đề thực tiễn.
+            </p>
+          </div>
+
+          <div class="info-card reveal reveal-d2 revealed">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+              Mục tiêu của Portfolio
+            </h3>
+            <ul class="info-card-list">
+              <li><strong>Lưu trữ sản phẩm cá nhân:</strong> Hệ thống hóa toàn bộ 6 bài tập thực hành của môn học vào một không gian số khoa học, gọn gàng.</li>
+              <li><strong>Thể hiện các kỹ năng số đã học:</strong> Là minh chứng trực quan cho khả năng tổ chức thông tin, sử dụng công cụ số và thiết kế giao diện web cơ bản.</li>
+              <li><strong>Dễ dàng truy cập và chia sẻ:</strong> Giúp việc tra cứu và báo cáo kết quả dự án trở nên nhanh chóng, tiện lợi và chuyên nghiệp hơn so với việc gửi file truyền thống.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================== SECTION 2: DỰ ÁN ======================== -->
+  <section class="page-section active visible" id="projects">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Bài tập &amp; Dự án thực hành</h2>
+        <p class="section-subtitle">Hệ thống hóa toàn bộ các bài tập thực hành môn Nhập môn Công nghệ.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Bài 1 -->
+        <article class="project-card reveal revealed">
+          <div class="card-header-flex">
+            <span class="card-tag">Bài 1</span>
+          </div>
+          <h3>Thao tác cơ bản với tệp tin và thư mục</h3>
+          <div class="card-details">
+            <div class="card-detail-item">
+              <div class="card-detail-title">Mục tiêu</div>
+              <div class="card-detail-desc">Rèn luyện kỹ năng tạo, đổi tên, sao chép, di chuyển, xóa tệp tin và thư mục một cách thành thạo trên hệ điều hành Windows (có thể điều chỉnh cho macOS/Linux).</div>
+            </div>
+          </div>
+          <div class="card-spacer"></div>
+          <a href="https://drive.google.com/file/d/1nFM0UCsszVrWDCYCUSHzgTdDfgyqzpcQ/view?usp=sharing" target="_blank" class="btn btn-secondary" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            Xem báo cáo &amp; Minh chứng
+          </a>
+        </article>
+
+        <!-- Bài 2 -->
+        <article class="project-card reveal revealed">
+          <div class="card-header-flex">
+            <span class="card-tag">Bài 2</span>
+          </div>
+          <h3>Tìm kiếm và đánh giá thông tin học thuật</h3>
+          <div class="card-details">
+            <div class="card-detail-item">
+              <div class="card-detail-title">Mục tiêu</div>
+              <div class="card-detail-desc">Phát triển kỹ năng tìm kiếm và đánh giá thông tin học thuật từ các nguồn đáng tin cậy.</div>
+            </div>
+          </div>
+          <div class="card-spacer"></div>
+          <a href="https://drive.google.com/file/d/1EXzBFBVdK7hLNrwwKbYFCqfmyBsLCrqj/view?usp=sharing" target="_blank" class="btn btn-secondary" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            Xem báo cáo &amp; Minh chứng
+          </a>
+        </article>
+
+        <!-- Bài 3 -->
+        <article class="project-card reveal revealed">
+          <div class="card-header-flex">
+            <span class="card-tag">Bài 3</span>
+          </div>
+          <h3>Viết prompt hiệu quả cho các tác vụ học tập</h3>
+          <div class="card-details">
+            <div class="card-detail-item">
+              <div class="card-detail-title">Mục tiêu</div>
+              <div class="card-detail-desc">Phát triển kỹ năng viết prompt hiệu quả để tận dụng tối đa khả năng của các mô hình ngôn ngữ lớn trong học tập.</div>
+            </div>
+          </div>
+          <div class="card-spacer"></div>
+          <a href="https://drive.google.com/file/d/19TCfV03KWviGk47zdZZjiub3Z1tyxP1m/view?usp=sharing" target="_blank" class="btn btn-secondary" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            Xem báo cáo &amp; Minh chứng
+          </a>
+        </article>
+
+        <!-- Bài 4 -->
+        <article class="project-card reveal revealed">
+          <div class="card-header-flex">
+            <span class="card-tag">Bài 4</span>
+          </div>
+          <h3>Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm</h3>
+          <div class="card-details">
+            <div class="card-detail-item">
+              <div class="card-detail-title">Mục tiêu</div>
+              <div class="card-detail-desc">Thành thạo các công cụ hợp tác trực tuyến và thể hiện năng lực quản lý, điều phối cá nhân trong dự án nhóm.</div>
+            </div>
+          </div>
+          <div class="card-spacer"></div>
+          <a href="https://drive.google.com/file/d/16nARywEMCXWAebWLl0iC8qaYD4VUDVQL/view?usp=sharing" target="_blank" class="btn btn-secondary" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            Xem báo cáo &amp; Minh chứng
+          </a>
+        </article>
+
+        <!-- Bài 5 -->
+        <article class="project-card reveal revealed">
+          <div class="card-header-flex">
+            <span class="card-tag">Bài 5</span>
+          </div>
+          <h3>Sáng tạo nội dung số</h3>
+          <div class="card-details">
+            <div class="card-detail-item">
+              <div class="card-detail-title">Mục tiêu</div>
+              <div class="card-detail-desc">Thiết kế và trình bày báo cáo trực quan sinh động, ứng dụng các mô hình tạo sinh hình ảnh chuyên nghiệp và phát triển tư duy thiết kế web.</div>
+            </div>
+          </div>
+          <div class="card-spacer"></div>
+          <a href="https://drive.google.com/file/d/1-Hpz8umScHuHuTSfP4cJNQuuP5dNdqqh/view?usp=sharing" target="_blank" class="btn btn-secondary" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            Xem báo cáo &amp; Minh chứng
+          </a>
+        </article>
+
+        <!-- Bài 6 -->
+        <article class="project-card reveal revealed">
+          <div class="card-header-flex">
+            <span class="card-tag">Bài 6</span>
+          </div>
+          <h3>An toàn &amp; liêm chính học thuật</h3>
+          <div class="card-details">
+            <div class="card-detail-item">
+              <div class="card-detail-title">Mục tiêu</div>
+              <div class="card-detail-desc">Nhận thức sâu sắc về bản quyền, chống đạo văn, bảo mật thông tin và thiết lập ranh giới sử dụng AI an toàn.</div>
+            </div>
+          </div>
+          <div class="card-spacer"></div>
+          <a href="https://drive.google.com/file/d/11mVpAkeJ5nEGfMCS6rBauEKlS0gfo_KX/view?usp=sharing" target="_blank" class="btn btn-secondary" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            Xem báo cáo &amp; Minh chứng
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SECTION 3: TỔNG KẾT ======================== -->
+  <section class="page-section" id="summary">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Tổng kết học phần</h2>
+        <p class="section-subtitle">Trải nghiệm, kiến thức thu nhận được và những thách thức trong quá trình học tập.</p>
+      </div>
+
+      <div class="summary-container">
+
+        <div class="summary-reflection reveal revealed">
+          <h3>1. Trải nghiệm và cảm nhận</h3>
+          <p>
+            Quá trình xây dựng Portfolio là một trải nghiệm thực hành vô cùng hữu ích. Việc chuyển hóa các bài tập lý thuyết thành một trang web hoàn chỉnh giúp việc ôn tập và nhìn lại cả một quá trình học tập trở nên mới mẻ, trực quan và thú vị hơn rất nhiều.
+          </p>
+          
+          <h3 style="margin-top: 32px;">2. Kiến thức và kỹ năng quan trọng nhất</h3>
+          <p>
+            Kỹ năng lớn nhất mình thu nhận được là tư duy tổ chức thông tin và quản lý dữ liệu số khoa học. Bên cạnh đó, khả năng tự học thiết kế giao diện web cơ bản và kỹ năng khai thác công cụ (tìm kiếm, AI) cũng được cải thiện rõ rệt.
+          </p>
+        </div>
+
+        <div class="academic-challenges">
+          <div class="challenge-box solution reveal revealed">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Điểm tâm đắc
+            </h3>
+            <div class="challenge-list-item">
+              <h4>Không gian số hoàn thiện</h4>
+              <p>Hoàn thiện được một "không gian số" gọn gàng, giúp việc lưu trữ và trình bày các sản phẩm cá nhân trở nên chuyên nghiệp, hiện đại.</p>
+            </div>
+          </div>
+
+          <div class="challenge-box reveal revealed">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              Thách thức gặp phải
+            </h3>
+            <div class="challenge-list-item">
+              <h4>Biên tập &amp; chắt lọc</h4>
+              <p>Khó khăn lớn nhất là việc biên tập, chắt lọc nội dung từ các bài tập dài sao cho ngắn gọn để đưa lên web.</p>
+            </div>
+            <div class="challenge-list-item">
+              <h4>Bố cục hiển thị</h4>
+              <p>Sắp xếp bố cục trang sao cho người xem dễ dàng theo dõi nhất và thao tác mượt mà.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== MODAL ======================== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Đóng">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body" id="modal-body">
+      <span class="modal-badge">Bài 4</span>
+      <h2>Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm</h2>
+      
+      <div class="modal-block" style="margin-top: 16px;">
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+          Mục tiêu
+        </h4>
+        <p>Thành thạo các công cụ hợp tác trực tuyến và thể hiện năng lực quản lý, điều phối cá nhân trong dự án nhóm.</p>
+      </div>
+      
+      <div class="modal-block">
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+          Nội dung thực hành
+        </h4>
+        <ul><li>Quản lý source code trên GitHub và soạn thảo đặc tả cộng tác qua Google Docs.</li><li>Thiết lập hệ thống thư mục phân cấp và phân quyền bảo mật trên Google Drive.</li><li>Giải quyết các thách thức thực tế: Trôi thông tin, Xung đột tài liệu (Conflict), và Khó đánh giá tiến độ dự án.</li></ul>
+      </div>
+      
+      <a href="https://drive.google.com/file/d/1uB_lgsuH5vM0yzRrcoLwdxIvL_xtzK5f/view?usp=sharing" class="btn btn-primary" style="width:auto; display:inline-flex; margin-top:12px;" target="_blank">
+        Truy cập sản phẩm / Minh chứng (Tại đây)
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+    </div>
+  </div>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="footer-left">
+        © 2025 Nguyễn Viết Hưng — Digital Portfolio, UET - ĐHQGHN
+      </div>
+      <div class="footer-right">
+        <a href="mailto:25020196@vnu.edu.vn" class="footer-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          25020196@vnu.edu.vn
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body></html>
